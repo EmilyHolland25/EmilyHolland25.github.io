@@ -1,0 +1,145 @@
+body {
+  text-align: center;
+  background-color: #222;
+}
+
+/* glitch title */
+
+.glitch {
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+
+  text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+  -0.025em -0.05em 0 rgba(0,255,0, 0.75),
+  0.025em 0.05em 0 rgba(0,0,255,0.75);
+
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: -50%;
+
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+    -0.05em -0.025em 0 rgba(0,255,0, 0.75),
+    -0.025em 0.05em 0 rgba(0,0,255,0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+    -0.05em -0.025em 0 rgba(0,255,0, 0.75),
+    -0.025em 0.05em 0 rgba(0,0,255,0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025 0 rgba(255,0,0,0.75),
+    0.025em 0.025em 0 rgba(0,255,0, 0.75),
+    -0.05em -0.05em 0 rgba(0,0,255,0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025 0 rgba(255,0,0,0.75),
+    0.025em 0.025em 0 rgba(0,255,0, 0.75),
+    -0.05em -0.05em 0 rgba(0,0,255,0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+    0.05em 0 0 rgba(0,255,0, 0.75),
+    0 -0.05em 0 rgba(0,0,255,0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+    0.05em 0 0 rgba(0,255,0, 0.75),
+    0 -0.05em 0 rgba(0,0,255,0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255,0,0,0.75),
+    -0.025em -0.025em 0 rgba(0,255,0, 0.75),
+    -0.025em -0.05em 0 rgba(0,0,255,0.75);
+  }
+}
+
+/* subheading */
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 20px;
+  color: #fff;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+/* buttons */
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 175px;
+  width: 175px;
+  border: 7px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.025);
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: hsl(317, 100%, 54%);
+  box-shadow: inset 0 0 0.5em 0  hsl(317, 100%, 54%), 0 0 0.5em 0  hsl(317, 100%, 54%);
+
+}
+
+.green {
+  background-color: hsl(115, 100%, 50%);
+  box-shadow: inset 0 0 0.5em 0  hsl(115, 100%, 50%), 0 0 0.5em 0  hsl(115, 100%, 50%);
+
+}
+
+.blue {
+  background-color: hsl(183, 100%, 50%);
+  box-shadow: inset 0 0 0.5em 0  hsl(183, 100%, 50%), 0 0 0.5em 0  hsl(183, 100%, 50%);
+
+}
+
+.yellow {
+  background-color: hsl(63, 100%, 50%);
+  box-shadow: inset 0 0 0.5em 0  hsl(63, 100%, 50%), 0 0 0.5em 0  hsl(63, 100%, 50%);
+
+}
+
+.pressed {
+  box-shadow: 0 0 10px grey;
+  opacity: 0.5;
+}
