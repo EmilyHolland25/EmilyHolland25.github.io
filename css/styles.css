@@ -691,6 +691,7 @@ color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 i {
@@ -698,7 +699,7 @@ i {
 }
 
 i:hover {
-  color: var(--clr-accent-400);
+  transform: scale(1.1);
 }
 
 /* CV page */
@@ -742,14 +743,18 @@ margin: 0 auto;
 /* Burger menu */
 
 .burger {
+  position: relative;
   display: none;
+  width: 40px;
+  height: 30px;
 }
 
-.burger div {
+.burger > * {
+  display: block;
   width: 26px;
   height: 2px;
-  background-color: white;
-  margin: 5px;
+  color: white;
+  margin: 3px;
   transition: all 0.3s ease;
 }
 
@@ -779,9 +784,28 @@ margin: 0 auto;
    animation-name: navLinkFade;
    animation-duration: 1s;
 }
+
+.navLinks li a {
+  font-size: 2rem;
+}
+
 .burger {
-  display:block;
+  display: inline-block;
   cursor: pointer;
+  position: relative;
+
+}
+
+.burger > *{
+  display: inline-block;
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+
 }
 
 }
@@ -904,6 +928,8 @@ margin: 0 auto;
 .subheading {
   color: rgb(55, 55, 55);
   font-family: 'Montserrat', sans-serif;
-margin-bottom: 20px;
+margin-bottom: 2rem;
 padding: 0;
 }
+
+/* burger animation  */

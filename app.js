@@ -26,6 +26,7 @@ burger.classList.toggle('toggle');
 
 }
 
+
 navSlide();
 
 // modal image
@@ -134,7 +135,7 @@ function typing(){
       count++;
       index = 0;
     }
-    setTimeout(type, 300);
+    setTimeout(type, 180);
   }());
 }
 
