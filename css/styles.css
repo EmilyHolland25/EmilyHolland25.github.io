@@ -7,19 +7,30 @@ html {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-accent-400: hsl(142, 90%, 61%);
+   /* #A4EBF3; */
+   /* #FF4C29 */
+
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 200;
   font-size: 3rem;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.title h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  font-size: clamp(2rem, 1rem + 5vw, 7rem);
   margin-bottom: 10px;
   padding: 0;
 }
@@ -49,7 +60,7 @@ header {
   align-items: center;
   padding: 0 10%;
   background-color: #212125;
-  z-index: 1;
+  z-index: 2;
   flex-shrink: 0;
 }
 
@@ -133,9 +144,14 @@ backdrop-filter: blur(5px);
 /* Title */
 
 .title {
-  margin-top: 15%;
-  margin-left: 28%;
+  margin-top: 12%;
+  margin-left: 12%;
   position: relative;
+}
+
+.title h3 {
+  font-size: clamp(1rem, 1rem + 1vw, 3rem);
+  font-weight: 300;
 }
 
 .typing {
@@ -143,7 +159,7 @@ backdrop-filter: blur(5px);
   position: relative;
 }
 
-.typing::after {
+/* .typing::after {
   content: '';
   position: absolute;
   right: -4px;
@@ -151,7 +167,7 @@ backdrop-filter: blur(5px);
   height: 90%;
   border-right: 2px solid black;
   animation: blink 0.5s infinite ease;
-}
+} */
 
 @keyframes blink{
   0% {
@@ -346,52 +362,18 @@ backdrop-filter: blur(5px);
 .homeBtn {
   position: fixed;
   margin-top: -50px;
-  margin: 5px;
   padding: 0;
   z-index: 1;
   height: 40px;
-  width: 100%;
-  opacity: 0.5;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  width: 30px;
   z-index: 2;
+  margin-right: 50px;
 }
 
-.homeBtn button {
-  border-radius: 12px;
-  background-color: rgba(121, 121, 121, 0.5);
-  width: 25px;
-  text-align: center;
-  line-height: 50%;
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  height:  40px;
+.homeIcon {
+  color: black;
+  padding: 10px;
 }
-
-.homeBtn i {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    display: block;
-    margin-left: -6px;
-    margin-top: -4px;
-    color: black;
-}
-
-.homeBtn i:hover {
-  color: white;
-}
-
-.homeBtn button:hover {
-  background-color: rgb(67, 67, 71)
-}
-
 
 /* main page */
 
@@ -510,8 +492,8 @@ line-height: 4rem;
   flex-wrap: wrap;
   /* margin-top: 650px; */
   z-index: 1;
-  flex: 1 1 40%;
-  gap: 1em;
+  flex: 1 1 50%;
+  gap: 4rem;
 }
 
 /* project cards */
@@ -932,4 +914,82 @@ margin-bottom: 2rem;
 padding: 0;
 }
 
-/* burger animation  */
+/* React Section */
+
+.reactContainer {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reactImg {
+  background-image: url("../images/reactHero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  min-width: 500px;
+}
+
+.phoneImages {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneImg {
+  background-image: url("../images/iphoneColour.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  min-width: 500px;
+}
+
+.phoneImg2 {
+  background-image: url("../images/iphoneServices.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  min-width: 500px;
+}
+
+.reactSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 2rem 2rem 2.5rem 2rem;
+}
+
+.reactDescription {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  line-height: 1.7;
+  width: 50ch;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.reactScreenshot {
+  height: 100vh;
+  width: 100%;
+
+}
+
+.reactFullSite {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
