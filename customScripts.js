@@ -1,13 +1,3 @@
-// OMG, WE'RE USING ES6
-// REDUCES PAGE LOADING SPEED BY REMOVING JQUERY LIBRARY
-// LET'S USE A PREPROCESSOR LIKE BABEL SO THIS WORKS IN IE THOUGH?
-
-//Register ScrollTrigger for use by GSAP (not sure if needed by recent versions of GSAP)
-// gsap.registerPlugin(ScrollTrigger);
-
-
-
-// When DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
 
 	
