@@ -1,0 +1,327 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+body {
+	line-height: 1; }
+ol, ul {
+	list-style: none; }
+q {
+	quotes: none; }
+
+q:before, q:after {
+	content: '';
+	content: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+/* #Basic Styles
+================================================== */
+body {
+	background: #fff;
+	font: 14px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+ }
+
+ * { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.clear {clear:both;}
+
+img[src*=".svg"] {
+  width: 100%;
+  height: auto;
+}
+
+
+/* #Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+	font-weight: normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+.subheader { color: #777; }
+
+p { margin: 0 0 20px 0; }
+p img { margin: 0; }
+p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+/*	Blockquotes  */
+/* blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; } */
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+/*	FireFox Font Fix  */
+
+@-moz-document url-prefix() {
+  body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  }
+}
+
+
+/* #Links
+================================================== */
+p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+ul, ol { margin-bottom: 20px; }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+li { line-height: 18px; margin-bottom: 12px; }
+li p { line-height: inherit; }
+
+/* #Images
+================================================== */
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; }
+
+
+/* #Buttons
+================================================== */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: normal;
+  padding: 8px 10px; 
+  font-family: inherit;
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+	border: none;
+	background: none;
+}
+
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+	width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center; }
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+
+
+/* #Forms
+================================================== */
+
+form {
+	margin-bottom: 20px; }
+fieldset {
+	margin-bottom: 20px; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	outline: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-webkit-font-smoothing: antialiased;
+	border-radius: 0px;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	border: none;
+	font-family: inherit;
+}
+select {
+	padding: 0; }
+textarea {
+	min-height: 60px; }
+label,
+legend {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;  }
+select {
+	width: 220px; }
+input[type="checkbox"] {
+	display: inline; }
+
+
+
+
+  /* Large Screens beyond 1280px
+================================================== */
+ 
+    /* Note: Design for a width of 1280px */
+
+    .container  { 
+		width: 90%;
+		max-width: 1500px; 
+		position: relative; 
+		margin: 0 auto; 
+		padding: 0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-direction: row;
+		-ms-flex-direction: row;
+	}
+
+
+	.one.column,
+	.one.columns                    { width: calc(6.25% - 20px); }
+	.two.columns                    { width: calc(13.3333333333% - 20px); }
+	.three.columns                  { width: calc(18.75% - 20px);            }
+	.four.columns                   { width: calc(25% - 20px); }
+	.five.columns                   { width: calc(31.25% - 20px); }
+	.six.columns                    { width: calc(37.5% - 20px);            }
+	.seven.columns                  { width: calc(43.75% - 20px); }
+	.eight.columns                  { width: calc(50% - 20px); }
+	.nine.columns                   { width: calc(56.25% - 20px);          }
+	.ten.columns                    { width: calc(62.5% - 20px); }
+	.eleven.columns                 { width: calc(68.75% - 20px); }
+	.twelve.columns                 { width: calc(75% - 20px); }
+	.thirteen.columns               { width: calc(81.25% - 20px); }
+	.fourteen.columns               { width: calc(87.5% - 20px); }
+	.fifteen.columns                { width: calc(93.75% - 20px); }
+	.sixteen.columns                { width: calc(100% - 20px); }
+  
+	.one-third.column               { width: calc(33.333% - 20px); }
+	.two-thirds.column              { width: calc(66.666% - 20px); }
+  
+	.one-half.column                { width: calc(50% - 20px); }
+
+  
+	.container.no-flex							{display: block;}
+	.container .column,
+    .container .columns                         { float: none; display: inline; margin-left: 10px; margin-right: 10px;  }
+	.container.no-flex .column,
+	.container.no-flex .columns					{float: left;}
+    .row                                        { margin-bottom: 20px; }
+  
+/* #Base 960 Grid
+================================================== */
+
+@media only screen and (min-width: 1750px) {
+
+    .container  {max-width: 1920px; width: 95%;}
+    
+}
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { min-width: 300px; width: 90%; }
+        .container .columns,
+        .container .column { margin: 0; width: 100%}
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+		/* Self Clearing Goodness */
+		.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+		/* Use clearfix class on parent to clear nested columns,
+		or wrap each row of columns in a <div class="row"> */
+		.clearfix:before,
+		.clearfix:after,
+		.row:before,
+		.row:after {
+		content: '\0020';
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0; }
+		.row:after,
+		.clearfix:after {
+		clear: both; }
+		.row,
+		.clearfix {
+		zoom: 1; }
+
+		/* You can also use a <br class="clear" /> to clear columns */
+		.clear {
+		clear: both;
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		}
+	}  
