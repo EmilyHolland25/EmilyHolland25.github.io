@@ -1159,7 +1159,7 @@ section .air{
   width: 100%;
   height: 100px;
   
-background-image: url(./assets/wave.svg);
+background-image: url(assets/wave.svg);
 /* -webkit-mask-image: url(assets/wave.svg);
 mask-image: url(assets/wave.svg); */
 
