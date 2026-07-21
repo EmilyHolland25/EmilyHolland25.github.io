@@ -1034,14 +1034,14 @@ margin-bottom: -100px;}
 	padding: 0;
 	margin: 0;
 	color: #fff;
-	font-size: 2.5rem;
-	margin-bottom:20px;
+	font-size: 1.5rem;
+	margin-bottom: 16px;
   }
   
   .card-title::after {
 	content: '';
 	position: absolute;
-	height: 4px;
+	height: 2px;
 	left: calc(var(--padding) * -1);
 	bottom: -2px;
 	width: calc(100% + var(--padding));
@@ -1346,14 +1346,14 @@ button:hover {
 
   .blob.static.lighter {
 	  opacity: 0.5;
-	  transform: translate(-50%, -50%) rotate(200deg) scale(0.92);
+	  transform: translate(-50%, -50%) rotate(220deg) scale(0.99);
   }
 
   .profile-img-outer {
 	      position: relative;
     z-index: 2;
 
-    width: 70%;
+    width: 80%;
     aspect-ratio: 1;
 
     border-radius: 50%;
