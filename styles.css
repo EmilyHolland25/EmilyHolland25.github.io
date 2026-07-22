@@ -941,7 +941,7 @@ footer li a {font-size: 1.5rem;}
 padding-bottom: 200px;
 margin-bottom: -100px;}
 
-.hero {padding-top:150px; padding-bottom: 50px;}
+.hero {margin-top:150px; margin-bottom: 100px;}
 .hero .txt-side {padding: 100px 0;}
 
 .projects .project-card 
@@ -957,8 +957,8 @@ margin-bottom: -100px;}
 .projects-wrap {
 	display: grid;
 	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-	grid-gap: 2.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	grid-gap: 2rem;
 }
 
 .project-card {
