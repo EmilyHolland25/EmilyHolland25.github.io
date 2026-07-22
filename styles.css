@@ -1509,8 +1509,24 @@ width: 100%;
   }
 
 
-
-
+.skills-wrap {
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+.skills-wrap p {
+  margin: 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.skills-wrap p:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	right: -20px;
+	width: 1px;
+	height: 100%;
+	background-color: #323e48;
+	top: 0;
+}
 
 
 
