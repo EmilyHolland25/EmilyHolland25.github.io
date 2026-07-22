@@ -944,6 +944,10 @@ margin-bottom: -100px;}
 .hero {margin-top:150px; margin-bottom: 100px;}
 .hero .txt-side {padding: 100px 0;}
 
+.band.projects {
+	overflow: visible;
+}
+
 .projects .project-card 
 {background: rgba(250,250,250,0.9); 
 	z-index:1; 
@@ -1313,9 +1317,9 @@ button:hover {
 
 .blob {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
+    top: 5%;
+    left: 20%;
+    width: 40%;
     fill: var(--accentCol);
     z-index: -1;
     animation: move 10s ease-in-out infinite;
