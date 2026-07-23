@@ -118,6 +118,12 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+	.sm-icon {
+		font-size: 1.8rem;
+	}
+}
+
 
 .sm-icon:hover,
 footer a:hover {
@@ -1524,7 +1530,7 @@ section .air.air4{
 		
 
 		.blob-wrap {
-			margin-bottom:20px;
+			margin-bottom: 60px;
 			width: 100%;
 		}
     }
