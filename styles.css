@@ -1376,18 +1376,6 @@ button:hover {
     object-fit: cover;
 }
 
-  /* .glass-bg {
-background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(15px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-position: fixed;
-height: 100%;
-width: 100%;
-
-  } */
 
   
   @keyframes move {
@@ -1579,7 +1567,7 @@ width: 100%;
 		border-radius: 10px;}
 
 		.projects-wrap {grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));}
-		.projects .project-card {min-height: 200px;}
+		.projects .project-card {min-height: 400px;}
 		.card-title {font-size: 1.7rem;}
 
 		footer .sixteen.columns.flex {flex-wrap: wrap;}
@@ -1587,17 +1575,15 @@ width: 100%;
 		footer .social-col {margin-bottom: 30px;}
 
 		.profile-img-outer {
-			width: 220px;
-			height: 220px;
+			width: 250px;
+			height: 250px;
 
 		}
-		.blob.static {
-			top: -169px;
-			left: 39px;
-		}
+		
 
 		.blob-wrap {
-			margin-bottom:60px;
+			margin-bottom:20px;
+			width: 100%;
 		}
     }
 
