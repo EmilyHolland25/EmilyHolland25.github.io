@@ -4,16 +4,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	/* ------ STICKY HEADER --------- */
 	
-	const header = document.querySelector('header');
-	let prevScrollpos = window.pageYOffset;
-	window.addEventListener("scroll", (e) => {
-		// Add sticky class to give background and less padding
-		header.classList[window.scrollY > 1 ? 'add' : 'remove']('sticky');
-		// Slide up and hide the header if user scrolls down but show again if user scrolls up
-		const currentScrollPos = window.pageYOffset;
-		header.classList[(prevScrollpos < currentScrollPos && window.scrollY > 120) ? 'add' : 'remove']('hidden');
-		prevScrollpos = currentScrollPos;
+const header = document.querySelector('header');
+const arrowUp = document.querySelector('.arrow-up');
+const logo = document.querySelector('.logo');
+
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+	// Add sticky class to give background and less padding
+	header.classList[window.scrollY > 1 ? 'add' : 'remove']('sticky');
+
+	// Slide up and hide the header if user scrolls down but show again if user scrolls up
+	const currentScrollPos = window.pageYOffset;
+	header.classList[(prevScrollpos < currentScrollPos && window.scrollY > 120) ? 'add' : 'remove']('hidden');
+
+	// Show/hide back to top button
+	if (arrowUp) {
+		arrowUp.classList[window.scrollY > 500 ? 'add' : 'remove']('show');
+	}
+
+	prevScrollpos = currentScrollPos;
+});
+
+// Back to top functionality
+const scrollToTop = () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
 	});
+};
+
+if (arrowUp) {
+	arrowUp.addEventListener('click', scrollToTop);
+}
+
+if (logo) {
+	logo.addEventListener('click', scrollToTop);
+}
 
 	/* ------ MOBILE MENU --------- */
 
