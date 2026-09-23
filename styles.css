@@ -967,6 +967,7 @@ margin-bottom: -100px;}
 	align-items: center;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2rem;
+	margin-bottom: 80px;
 }
 
 .project-card {
@@ -1129,6 +1130,12 @@ margin-bottom: -100px;}
 }
   
   
+/* Professional projects */
+
+.bg-accent {
+  background-color: var(--accentCol);
+}
+
 
 
 .subheading {
@@ -1513,7 +1520,7 @@ section .air.air4{
 
 .skills-wrap {
 	flex-wrap: wrap;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 .skills-wrap p {
   margin: 0 20px;
