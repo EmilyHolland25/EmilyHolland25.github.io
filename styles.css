@@ -1548,7 +1548,8 @@ section .air.air4{
 	@media all and (min-width: 1750px) {}
 
     /* Desktop 960 to 1300 sizes (devices and browsers) */
-	@media all and (max-width: 1300px) {
+	@media all and (max-width: 1400px) {
+		.projects-wrap {  grid-template-columns: repeat(2, 1fr);}
     }
 
     /* Tablet Portrait size to standard 960 (devices and browsers) */
