@@ -1603,7 +1603,7 @@ section .air.air4{
 		}
 
 		.skills-wrap p {
-			margin: 0 10px;
+			margin: 6px 10px;
 		}
 		.skills-wrap p:not(:last-child)::after  {
 			right: -10px;
