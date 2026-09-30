@@ -1583,7 +1583,7 @@ section .air.air4{
 		padding: 30px 20px;
 		border-radius: 10px;}
 
-		.projects-wrap {  grid-template-columns: repeat(2, 1fr);}
+		.projects-wrap {  grid-template-columns: repeat(1, 1fr);}
 		.projects .project-card {min-height: 400px;}
 		.card-title {font-size: 1.7rem;}
 
