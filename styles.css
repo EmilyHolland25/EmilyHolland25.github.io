@@ -1578,7 +1578,7 @@ section .air.air4{
 		.hide-desktop {display: block !important;}
 
 		#about.band {padding-top: 0; overflow: visible;}
-		.blob.static {width: 38vmax;}
+		/* .blob.static {width: 38vmax;} */
 		.content-box {margin-right: 0;
 		padding: 30px 20px;
 		border-radius: 10px;}
@@ -1592,14 +1592,21 @@ section .air.air4{
 		footer .social-col {margin-bottom: 30px;}
 
 		.profile-img-outer {
-			width: 250px;
-			height: 250px;
+			width: 300px;
+			height: 300px;
 		}
 		
 
 		.blob-wrap {
 			margin-bottom: 40px;
-			width: 100%;
+			width: 80%;
+		}
+
+		.skills-wrap p {
+			margin: 0 10px;
+		}
+		.skills-wrap p:not(:last-child)::after  {
+			right: -10px;
 		}
 
 		
