@@ -343,17 +343,17 @@
                                 <form class="card-form" action="https://api.staticforms.xyz/submit" method="post">
                                     <input type="hidden" name="accessKey" value="4bee3181-5ead-4380-8d55-c44a7ca089bf">
                                     <div class="input">
-                                        <input name="name" type="text" class="input-field" value="" required/>
-                                        <label class="input-label">Full name</label>
+                                        <input name="name" type="text" aria-label="Name" id="name" class="input-field" value="" required/>
+                                        <label class="input-label" for="name">Full name</label>
                                     </div>
                                      <div class="input">
-                                        <input name="email" type="text" class="input-field" value="" required/>
-                                        <label class="input-label">Email</label>
+                                        <input name="email" type="text" id="email" aria-label="Email" class="input-field" value="" required/>
+                                        <label class="input-label" for="email">Email</label>
                                     </div>
                                
                                 <div class="input">
-                                    <textarea name="message" class="input-field" id="message" cols="30" rows="5"></textarea>
-                                    <label class="input-label">Message</label>
+                                    <textarea name="message" class="input-field" aria-label="Message" id="message" cols="30" rows="5"></textarea>
+                                    <label class="input-label" for="message">Message</label>
                                 </div>
                                 <input type="hidden" name="subject" value="Contact form submission" />
                                  <input type="hidden" name="redirectTo" value="https://emilyholland25.github.io/">
@@ -412,9 +412,9 @@
 					<div class="social-buttons">
                         <div class="icons">
 
-                            <a href="https://github.com/EmilyHolland25" target="_blank"><i class="sm-icon fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/emily-holland-3a7808207/" target="_blank"><i class="sm-icon fab fa-linkedin"></i></a>
-                            <a href="mailto:emilyholland25@yahoo.com?subject=Portfolio" target="_blank"><i class="sm-icon fas fa-envelope"></i></a>
+                            <a href="https://github.com/EmilyHolland25" aria-label="View my GitHub" target="_blank"><i class="sm-icon fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/emily-holland-3a7808207/" aria-label="View my LinkedIn" target="_blank"><i class="sm-icon fab fa-linkedin"></i></a>
+                            <a href="mailto:emilyholland25@yahoo.com?subject=Portfolio" aria-label="Send me an email" target="_blank"><i class="sm-icon fas fa-envelope"></i></a>
                             </div>
                           
 					</div><!-- /.social-buttons -->
