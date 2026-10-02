@@ -1584,9 +1584,20 @@ section .air.air4{
 		border-radius: 10px;}
 
 		.projects-wrap {  grid-template-columns: repeat(1, 1fr);}
-		.projects .project-card {min-height: 400px;}
-		.card-title {font-size: 1.7rem;}
-
+		.projects .project-card {min-height: 400px; margin-bottom: 340px; padding-top: 400px; overflow: visible;}
+		.projects .project-card .card-content {
+			transform: none;
+			transition: none;
+			background: none;
+			padding-top: 40px;
+		}
+		    .card-content > *:not(.card-title, .cardButton) {
+				opacity: 1;
+				transition: none;
+			}
+		
+		.card-title {font-size: 1.7rem; color: #323e48;}
+		.card-body {color:#323e48; opacity: 1;}
 		footer .sixteen.columns.flex {flex-wrap: wrap;}
 		footer .contact-info {margin-bottom: 20px;}
 		footer .social-col {margin-bottom: 30px;}
